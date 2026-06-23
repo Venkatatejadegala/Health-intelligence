@@ -182,6 +182,10 @@ if (!JWT_SECRET) {
 // mongoose.set('bufferCommands', false);
 
 const startServer = (databaseStatus = 'connected') => {
+  if (process.env.VERCEL) {
+    logger.info(`Database status: ${databaseStatus} (Skipping app.listen on Vercel)`);
+    return;
+  }
   app.listen(PORT, () => {
     logger.info(`Health Hub API server running on port ${PORT}`);
     logger.info(`Health check: http://localhost:${PORT}/health`);
