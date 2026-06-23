@@ -1,0 +1,453 @@
+{
+	"info": {
+		"_postman_id": "c138805f-0efb-4bb2-bc10-ef54c86ee71a",
+		"name": "Health Hub Platform API",
+		"description": "Comprehensive API collection for the AI-powered Health Hub, tracking Daily Logs, Custom Profiles, AI Coach Insights, ML Predictors, and Workout Progression.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"athlete_one\",\n  \"email\": \"athlete@health.com\",\n  \"password\": \"password123\",\n  \"gender\": \"male\",\n  \"age\": 26,\n  \"height\": 180,\n  \"weight\": 76.5,\n  \"activityLevel\": \"moderately_active\",\n  \"goal\": \"cutting\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJson = pm.response.json();",
+									"if (responseJson.token) {",
+									"    pm.environment.set(\"jwtToken\", responseJson.token);",
+									"}"
+								],
+								"type": "javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"demo@health.com\",\n  \"password\": \"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Demo Fallback Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/demo-fallback",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"demo-fallback"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Athlete Profile",
+			"item": [
+				{
+					"name": "Get Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"age\": 27,\n  \"height\": 180,\n  \"weight\": 75.8,\n  \"activityLevel\": \"very_active\",\n  \"goal\": \"cutting\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Daily Logs",
+			"item": [
+				{
+					"name": "Save Today's Log",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"date\": \"2026-06-06T00:00:00.000Z\",\n  \"caloriesConsumed\": 2100,\n  \"proteinConsumed\": 148,\n  \"carbsConsumed\": 200,\n  \"fatConsumed\": 55,\n  \"fiberConsumed\": 30,\n  \"waterIntake\": 3000,\n  \"sleepHours\": 7.8,\n  \"didWorkout\": true,\n  \"energyLevel\": 8,\n  \"stressLevel\": 4,\n  \"mood\": 4,\n  \"recoveryScore\": 82,\n  \"weight\": 75.8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/logs/today",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"logs",
+								"today"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Today's Log",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/logs/today",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"logs",
+								"today"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Workout Planner",
+			"item": [
+				{
+					"name": "Generate Workout Plan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"goal\": \"deficit\",\n  \"experienceLevel\": \"intermediate\",\n  \"split\": \"upper_lower\",\n  \"workoutDays\": [1, 2, 4, 5],\n  \"equipment\": [\"barbell\", \"dumbbells\", \"bench\", \"cable\"],\n  \"bodyFocusAreas\": [\"chest\", \"back\", \"legs\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/workouts/generate-plan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"workouts",
+								"generate-plan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Current Plan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/workouts/current",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"workouts",
+								"current"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log Workout Session",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"workoutPlanId\": \"665000000000000000000005\",\n  \"date\": \"2026-06-06T00:00:00.000Z\",\n  \"exercises\": [\n    {\n      \"name\": \"Bench Press\",\n      \"sets\": [\n        { \"weight\": 70, \"reps\": 8, \"completed\": true },\n        { \"weight\": 70, \"reps\": 8, \"completed\": true },\n        { \"weight\": 72.5, \"reps\": 6, \"completed\": true }\n      ]\n    },\n    {\n      \"name\": \"Lat Pulldown\",\n      \"sets\": [\n        { \"weight\": 55, \"reps\": 10, \"completed\": true },\n        { \"weight\": 55, \"reps\": 10, \"completed\": true }\n      ]\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/workout-sessions",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"workout-sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Progression Signals",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/workout-sessions/progression",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"workout-sessions",
+								"progression"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AI Coach",
+			"item": [
+				{
+					"name": "Get Coach Insight",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"question\": \"How should I adjust my routine based on my recovery scores?\",\n  \"persona\": \"scientific\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/coach/insight",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"coach",
+								"insight"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nutrition Intelligence",
+			"item": [
+				{
+					"name": "Get Summary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/nutrition-intelligence/summary",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"nutrition-intelligence",
+								"summary"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5000",
+			"type": "string"
+		},
+		{
+			"key": "jwtToken",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

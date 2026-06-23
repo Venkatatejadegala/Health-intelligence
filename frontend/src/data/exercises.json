@@ -1,0 +1,476 @@
+[
+  {
+    "id": "bench-press",
+    "name": "Barbell Bench Press",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": ["shoulders", "triceps"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Lie flat on a bench, gripping the barbell with hands slightly wider than shoulder-width.",
+      "Unrack the bar and hold it straight over your chest with your arms locked.",
+      "Inhale and lower the barbell slowly to your mid-chest level.",
+      "Push the bar back up powerfully while exhaling, keeping your elbows slightly tucked."
+    ],
+    "mistakes": ["Bouncing the bar off your chest.", "Flaring elbows out to a 90-degree angle.", "Lifting hips off the bench."],
+    "embedId": "8842411387461776196"
+  },
+  {
+    "id": "db-incline-press",
+    "name": "Incline Dumbbell Press",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": ["shoulders", "triceps"],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Set an incline bench to around 30 to 45 degrees.",
+      "Sit back with a dumbbell in each hand, resting them on your thighs.",
+      "Press the dumbbells up to arm length over your upper chest.",
+      "Lower the weights under control until they are close to the sides of your chest.",
+      "Contract your pectorals and press the dumbbells back to the starting position."
+    ],
+    "mistakes": ["Using an incline angle that is too steep (shifts focus to shoulders).", "Clicking dumbbells together at the top (loses tension)."],
+    "embedId": "27123532"
+  },
+  {
+    "id": "cable-fly",
+    "name": "Standing Cable Fly",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": ["shoulders"],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "steps": [
+      "Set cable pulleys to chest height and select appropriate weights.",
+      "Grasp handles and step forward in a staggered stance, leaning slightly forward.",
+      "With a slight bend in your elbows, sweep your arms forward in a wide arc until hands meet.",
+      "Slowly reverse the movement back to the starting point, feeling a stretch in your chest."
+    ],
+    "mistakes": ["Pressing the weight instead of flying.", "Letting elbows bend too much.", "Using momentum or swinging torso."],
+    "embedId": "27371623"
+  },
+  {
+    "id": "overhead-press",
+    "name": "Barbell Overhead Press",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscles": ["triceps", "core", "upper back"],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "steps": [
+      "Rack a barbell at chest height. Grip with hands just outside shoulder width.",
+      "Unrack the bar and hold it on your collarbone. Brace your core and squeeze your glutes.",
+      "Press the bar straight up overhead, moving your head back slightly to let the bar pass.",
+      "Once the bar clears your face, bring your head back neutral and lock your arms out at the top.",
+      "Lower the bar slowly back to your collarbone."
+    ],
+    "mistakes": ["Arching the lower back excessively.", "Not locking out at the top.", "Using legs to push the bar (turns it into a push press)."],
+    "embedId": "18968343"
+  },
+  {
+    "id": "lateral-raise",
+    "name": "Dumbbell Lateral Raise",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscles": ["traps"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "steps": [
+      "Stand holding dumbbells at your sides, palms facing inward.",
+      "Keep a slight bend in your elbows and lean your torso slightly forward.",
+      "Raise your arms out to the sides in a wide arc until they are parallel to the floor.",
+      "Slowly lower the dumbbells back to your sides."
+    ],
+    "mistakes": ["Shrugging shoulders up while raising weights.", "Swinging the body to lift the weight.", "Raising hands higher than elbows."],
+    "embedId": "27377453"
+  },
+  {
+    "id": "face-pull",
+    "name": "Cable Face Pull",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscles": ["upper back", "traps"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "steps": [
+      "Attach a rope handle to a pulley set at upper chest height.",
+      "Grasp the rope with an overhand grip, step back to lift the weight stack, and stand tall.",
+      "Pull the rope towards your face, pulling the hands apart beside your ears while driving elbows back.",
+      "Squeeze the rear delts and upper back, then slowly return to the starting position."
+    ],
+    "mistakes": ["Pulling with lower body momentum.", "Dropping elbows (keep them high and wide)."],
+    "embedId": "2890926374374996171"
+  },
+  {
+    "id": "barbell-curl",
+    "name": "Barbell Bicep Curl",
+    "primaryMuscle": "biceps",
+    "secondaryMuscles": ["forearms"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "steps": [
+      "Stand upright holding a barbell with an underhand grip, hands shoulder-width apart.",
+      "Keep your elbows tucked close to your torso and pin them in place.",
+      "Curl the bar upward toward chest height by contracting your biceps.",
+      "Lower the bar slowly back to the starting position with full control."
+    ],
+    "mistakes": ["Swinging hips or back to cheat.", "Letting elbows drift forward.", "Not completing the full range of motion."],
+    "embedId": "27366363"
+  },
+  {
+    "id": "hammer-curl",
+    "name": "Dumbbell Hammer Curl",
+    "primaryMuscle": "biceps",
+    "secondaryMuscles": ["forearms"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "steps": [
+      "Stand holding dumbbells with a neutral grip (palms facing each other).",
+      "Keep your elbows close to your torso.",
+      "Curl the weights upward while maintaining the neutral hand position.",
+      "Squeeze at the top of the curl, then slowly lower the weights."
+    ],
+    "mistakes": ["Elbows flared outwards.", "Fast drop on the eccentric phase."],
+    "embedId": "9866968935600309559"
+  },
+  {
+    "id": "incline-db-curl",
+    "name": "Incline Dumbbell Curl",
+    "primaryMuscle": "biceps",
+    "secondaryMuscles": ["forearms"],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Sit on an incline bench set to 45 degrees, letting arms hang straight down behind your torso.",
+      "Curl the dumbbells upward, keeping elbows locked in a backward position to emphasize the long head.",
+      "Squeeze your biceps at the top, then slowly lower the weights to full extension."
+    ],
+    "mistakes": ["Swinging shoulders.", "Not letting arms fully extend at the bottom."],
+    "embedId": "19831012"
+  },
+  {
+    "id": "skull-crusher",
+    "name": "EZ-Bar Skull Crusher",
+    "primaryMuscle": "triceps",
+    "secondaryMuscles": ["forearms"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Lie flat on a bench holding an EZ-bar over your chest with straight arms.",
+      "Incline your upper arms back slightly (about 10 degrees) to maintain tension.",
+      "Bend at the elbows to lower the bar towards your forehead or slightly behind your head.",
+      "Extend your elbows to press the bar back up to the starting position."
+    ],
+    "mistakes": ["Flaring elbows out to the sides.", "Moving the shoulder joint (upper arms should remain still)."],
+    "embedId": "26298456"
+  },
+  {
+    "id": "tricep-pushdown",
+    "name": "Cable Rope Tricep Pushdown",
+    "primaryMuscle": "triceps",
+    "secondaryMuscles": ["shoulders"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "steps": [
+      "Attach a rope to a high pulley. Grasp handles and step back slightly.",
+      "Pin your elbows to your sides and lean forward slightly from the hips.",
+      "Push the rope down by extending your elbows, spreading the rope ends at the bottom.",
+      "Slowly return the rope back up to chest level, keeping elbows stationary."
+    ],
+    "mistakes": ["Allowing elbows to flare or move forward/backward.", "Using shoulders to press down."],
+    "embedId": "27382975"
+  },
+  {
+    "id": "close-grip-bench",
+    "name": "Close-Grip Barbell Bench Press",
+    "primaryMuscle": "triceps",
+    "secondaryMuscles": ["chest", "shoulders"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Lie on bench press setup, gripping the barbell with hands shoulder-width apart (not closer).",
+      "Unrack bar, lower it slowly to mid-chest while keeping elbows tucked close to your ribs.",
+      "Press the bar back up to extension, feeling the squeeze in the triceps."
+    ],
+    "mistakes": ["Gripping too closely (wrist and elbow strain).", "Flaring elbows out."],
+    "embedId": "27383176"
+  },
+  {
+    "id": "farmers-walk",
+    "name": "Heavy Farmers Walk",
+    "primaryMuscle": "forearms",
+    "secondaryMuscles": ["traps", "core", "legs"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "steps": [
+      "Pick up heavy dumbbells in each hand, standing tall with shoulders packed.",
+      "Walk forward in a straight line with slow, deliberate steps.",
+      "Maintain strong grip pressure and brace core throughout."
+    ],
+    "mistakes": ["Slouching forward.", "Using light weights that don't challenge grip."],
+    "embedId": "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXVlY2J4eGV0N2dhOHR1OHFzb3N1dHlncjAxaWVuNDVwMmZoa2RkeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPz1pK2Mg42bUk0/giphy.gif"
+  },
+  {
+    "id": "reverse-wrist-curl",
+    "name": "Barbell Reverse Wrist Curl",
+    "primaryMuscle": "forearms",
+    "secondaryMuscles": [],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "steps": [
+      "Sit on a bench, resting forearms on thighs with wrists hanging over the knees.",
+      "Hold a barbell with an overhand grip (palms down).",
+      "Extend wrists upward, lifting the back of your hands towards the ceiling.",
+      "Slowly lower the barbell to the starting wrist extension."
+    ],
+    "mistakes": ["Lifting forearms off thighs.", "Rushing the movement."],
+    "embedId": "27383189"
+  },
+  {
+    "id": "hanging-leg-raise",
+    "name": "Hanging Leg Raise",
+    "primaryMuscle": "abs",
+    "secondaryMuscles": ["core", "hip flexors"],
+    "equipment": "bodyweight",
+    "difficulty": "advanced",
+    "steps": [
+      "Hang from a pull-up bar with hands shoulder-width apart.",
+      "Keep your legs straight and core engaged.",
+      "Raise your legs slowly by flexing your hips until they are parallel to the floor.",
+      "Control the descent back to the starting hang, preventing swinging."
+    ],
+    "mistakes": ["Using momentum and swinging.", "Shrugging shoulders (keep scapulae packed)."],
+    "embedId": "27383241"
+  },
+  {
+    "id": "cable-crunch",
+    "name": "Kneeling Cable Crunch",
+    "primaryMuscle": "abs",
+    "secondaryMuscles": ["core"],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "steps": [
+      "Kneel in front of a cable machine with a rope attachment set high.",
+      "Hold rope handles next to your ears, bend forward slightly from the hips.",
+      "Contract your abs to flex your spine downward, drawing your elbows to your thighs.",
+      "Slowly return to start, feeling the resistance on your abs."
+    ],
+    "mistakes": ["Pulling with arms.", "Hinging at hips instead of flexing spine."],
+    "embedId": "27356258"
+  },
+  {
+    "id": "pullup",
+    "name": "Pull-Up",
+    "primaryMuscle": "lats",
+    "secondaryMuscles": ["biceps", "upper back"],
+    "equipment": "bodyweight",
+    "difficulty": "advanced",
+    "steps": [
+      "Hang from a bar with a pronated grip (palms facing away), hands wider than shoulders.",
+      "Depress and retract your scapulae (pull shoulders down and back).",
+      "Pull your chest up toward the bar by driving your elbows down to your ribs.",
+      "Clear the bar with your chin, then lower yourself under control to a dead hang."
+    ],
+    "mistakes": ["Using leg drive or kipping.", "Not executing a full range of motion.", "Shoulders shrugging up at the bottom."],
+    "embedId": "26861963"
+  },
+  {
+    "id": "barbell-row",
+    "name": "Barbell Row",
+    "primaryMuscle": "lats",
+    "secondaryMuscles": ["upper back", "biceps", "core"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Hold barbell with overhand grip. Hinge hips back until torso is 45 degrees to floor.",
+      "Pull the bar to your lower rib cage, driving elbows back and squeezing shoulder blades.",
+      "Lower the bar under control to arm extension."
+    ],
+    "mistakes": ["Standing too upright.", "Rounding spine.", "Bouncing torso to lift weight."],
+    "embedId": "108789446429884037"
+  },
+  {
+    "id": "lat-pulldown",
+    "name": "Cable Lat Pulldown",
+    "primaryMuscle": "lats",
+    "secondaryMuscles": ["biceps", "upper back"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "steps": [
+      "Sit at a lat pulldown machine, adjusting the thigh pads.",
+      "Grip the bar with an overhand grip, wider than shoulder-width.",
+      "Lean back slightly and pull the bar down to your collarbone, driving elbows down.",
+      "Control the return of the bar to the top extension."
+    ],
+    "mistakes": ["Pulling the bar behind the neck.", "Using bodyweight momentum to swing.", "Pulling with hands instead of elbows."],
+    "embedId": "4419295319283270407"
+  },
+  {
+    "id": "deadlift",
+    "name": "Conventional Barbell Deadlift",
+    "primaryMuscle": "lower back",
+    "secondaryMuscles": ["hamstrings", "glutes", "quadriceps", "core"],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "steps": [
+      "Stand with feet hip-width apart, barbell over mid-foot. Grip outside your shins.",
+      "Flatten your spine, drop your hips, pull your chest up, and pull your shoulder blades down.",
+      "Brace your core, push through the floor, and stand up with the bar, keeping it close to your shins.",
+      "Lock out hips at the top. Lower the bar under control by pushing hips back and bending knees."
+    ],
+    "mistakes": ["Rounding the spine during the lift.", "Hyperextending the back at the lockout.", "Bar drifting away from shins."],
+    "embedId": "20516895"
+  },
+  {
+    "id": "good-mornings",
+    "name": "Barbell Good Morning",
+    "primaryMuscle": "lower back",
+    "secondaryMuscles": ["hamstrings", "glutes"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Set barbell on upper traps (same as squat). Stand tall.",
+      "Hinge hips back while keeping back flat and spine neutral, lowering torso to 60-90 degrees.",
+      "Drive hips forward to return to standing upright."
+    ],
+    "mistakes": ["Rounding back.", "Bending knees too much (turns into a squat)."],
+    "embedId": "12543613294277285066"
+  },
+  {
+    "id": "hip-thrust",
+    "name": "Barbell Hip Thrust",
+    "primaryMuscle": "glutes",
+    "secondaryMuscles": ["hamstrings", "core"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Sit on the floor with your upper back against the edge of a bench.",
+      "Place a padded barbell across your hips. Feet flat on the floor, shoulder-width.",
+      "Drive through your heels to extend your hips upward, squeeze glutes at the top.",
+      "Lower your hips back down under control."
+    ],
+    "mistakes": ["Hyper-extending lower back instead of tilting pelvis.", "Feet placed too far forward (focuses on hamstrings)."],
+    "embedId": "16225811"
+  },
+  {
+    "id": "bulgarian-split-squat",
+    "name": "Dumbbell Bulgarian Split Squat",
+    "primaryMuscle": "glutes",
+    "secondaryMuscles": ["quadriceps", "hamstrings"],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Stand 2 feet in front of a bench. Place top of back foot on the bench.",
+      "Hold dumbbells in each hand. Lower hips until front thigh is parallel to floor.",
+      "Keep torso leaning slightly forward (targets glutes) and push back up through front heel."
+    ],
+    "mistakes": ["Knee collapsing inward.", "Stance too narrow (causing balance issues)."],
+    "embedId": "26307851"
+  },
+  {
+    "id": "squat",
+    "name": "Barbell Back Squat",
+    "primaryMuscle": "quadriceps",
+    "secondaryMuscles": ["glutes", "core", "calves"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Rest barbell on upper traps, grip bar, feet shoulder-width, toes out 15 degrees.",
+      "Brace core, push hips back, bend knees, and lower until thighs are parallel to floor or deeper.",
+      "Keep chest upright and knees tracking in line with toes.",
+      "Drive back up through the midfoot to the standing starting position."
+    ],
+    "mistakes": ["Knes collapsing inwards (valgus).", "Rounding lower back at the bottom (\"butt wink\").", "Shifting weight to toes."],
+    "embedId": "5038916500459247573"
+  },
+  {
+    "id": "db-lunge",
+    "name": "Dumbbell Walking Lunge",
+    "primaryMuscle": "quadriceps",
+    "secondaryMuscles": ["glutes", "hamstrings"],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Stand upright holding dumbbells at your sides.",
+      "Take a large step forward with one leg, lowering hips until rear knee almost touches floor.",
+      "Front knee should be bent 90 degrees directly above the ankle.",
+      "Drive through the front heel to step forward and bring rear foot to meet front, or step directly into next lunge."
+    ],
+    "mistakes": ["Knee tracking past toes.", "Leaning torso too far forward.", "Staggering balance (walking in a straight line instead of railroad tracks)."],
+    "embedId": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTVvdHltaXRkM3h0eHNfamMwaTB3MTJpMzBybzM5d3AwdzR1NTNxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT8qBrjcngCsejZ0mA/giphy.gif"
+  },
+  {
+    "id": "leg-press",
+    "name": "Sled Leg Press",
+    "primaryMuscle": "quadriceps",
+    "secondaryMuscles": ["glutes", "hamstrings"],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "steps": [
+      "Sit on leg press machine, place feet on platform shoulder-width.",
+      "Lower platform slowly towards chest by bending knees 90 degrees.",
+      "Press platform away to arm extension, keeping knees slightly unlocked at top."
+    ],
+    "mistakes": ["Locking knees at top.", "Lowering too deep, causing lower back to lift off pad."],
+    "embedId": "8884087261493051316"
+  },
+  {
+    "id": "romanian-deadlift",
+    "name": "Barbell Romanian Deadlift (RDL)",
+    "primaryMuscle": "hamstrings",
+    "secondaryMuscles": ["glutes", "lower back"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "steps": [
+      "Stand with feet hip-width apart, holding a barbell at hip height.",
+      "Push your hips back as far as possible, softening knees slightly.",
+      "Lower the bar down your thighs, keeping your back completely flat.",
+      "When you feel a deep stretch in your hamstrings, reverse the movement by pushing hips forward."
+    ],
+    "mistakes": ["Rounding back.", "Squatting down instead of hinging hips back.", "Letting the bar drift away from legs."],
+    "embedId": "25623585"
+  },
+  {
+    "id": "seated-leg-curl",
+    "name": "Seated Leg Curl Machine",
+    "primaryMuscle": "hamstrings",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "steps": [
+      "Sit in machine, thighs locked under pads, heels over rollers.",
+      "Contract hamstrings to pull rollers downwards and backwards.",
+      "Pause at maximum bend, slowly release to full extension."
+    ],
+    "mistakes": ["Slouching.", "Not adjusting thigh clamp tightly."],
+    "embedId": "27372196"
+  },
+  {
+    "id": "calf-raise",
+    "name": "Standing Dumbbell Calf Raise",
+    "primaryMuscle": "calves",
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "steps": [
+      "Stand upright holding a dumbbell in one hand, other hand on a wall for balance.",
+      "Place the ball of one foot on a raised step, heel hanging off the edge.",
+      "Lower your heel as far down as possible to feel a deep stretch.",
+      "Raise up onto your toes as high as possible, squeezing the calf.",
+      "Lower back down slowly."
+    ],
+    "mistakes": ["Bouncing rapidly without pausing.", "Not using a full range of motion."],
+    "embedId": "17174611091209075528"
+  },
+  {
+    "id": "seated-calf-raise",
+    "name": "Seated Calf Raise Machine",
+    "primaryMuscle": "calves",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "steps": [
+      "Sit in machine, platform under ball of feet, thighs under pad.",
+      "Lower heels as far as possible to stretch soleus muscle.",
+      "Press through toes to lift weight stack high, squeeze calves, lower under control."
+    ],
+    "mistakes": ["Bouncing.", "Not holding the peak squeeze."],
+    "embedId": "27372108"
+  }
+]
