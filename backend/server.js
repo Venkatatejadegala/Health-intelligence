@@ -107,6 +107,42 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 const { sanitize } = require('./middleware/sanitize.middleware');
 app.use(sanitize);
 
+// Database connection readiness check middleware for Serverless/Vercel environments
+app.use(async (req, res, next) => {
+  if (mongoose.connection.readyState === 2) {
+    logger.info('Database is connecting, waiting for connection to establish before handling request...');
+    try {
+      await new Promise((resolve, reject) => {
+        const timeout = setTimeout(() => {
+          reject(new Error('Database connection timeout (8s)'));
+        }, 8000);
+        
+        mongoose.connection.once('connected', () => {
+          clearTimeout(timeout);
+          resolve();
+        });
+        
+        mongoose.connection.once('error', (err) => {
+          clearTimeout(timeout);
+          reject(err);
+        });
+      });
+      logger.info('Database connection established successfully in middleware');
+    } catch (err) {
+      logger.error(`Database connection wait error: ${err.message}`);
+    }
+  } else if (mongoose.connection.readyState === 0 && process.env.NODE_ENV !== 'test') {
+    logger.warn('Database is disconnected. Triggering reconnection attempt...');
+    try {
+      await mongoose.connect(process.env.MONGODB_URI, { serverSelectionTimeoutMS: 6000 });
+      logger.info('Database reconnected successfully in middleware');
+    } catch (err) {
+      logger.error(`Failed to reconnect database in middleware: ${err.message}`);
+    }
+  }
+  next();
+});
+
 app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'OK',
