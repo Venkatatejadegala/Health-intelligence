@@ -2,7 +2,7 @@ const admin = require('firebase-admin');
 
 // Parse the private key from environment variables (replacing escaped newlines for string representation)
 const privateKey = process.env.FIREBASE_PRIVATE_KEY
-    ? process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n')
+    ? process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n').replace(/^"|"$/g, '')
     : undefined;
 
 const logger = require('../utils/logger');
